@@ -11,3 +11,17 @@ var counter = function counter() {
     }
   };
 };
+
+// big O practice
+
+function mid(arr){
+    var midIndex;      //O(1)
+    if(arr.length % 2 === 0){  //o(1)
+        midIndex = arr.length/2;
+    }else {
+        midIndex = (arr.length-1)/2;  //more math
+    } //O(1)
+    return arr[midIndex];        //lookup is O(1)
+}
+
+//O(1)
